@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-18T08:53:32.816Z</updated>
+  <updated>2016-04-21T03:00:17.268Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yoursite.com/2016/04/18/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E9%BB%91%E7%A7%91%E6%8A%80%E2%80%94%E2%80%94%E6%97%A0%E5%8D%A1%E9%A1%BF%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     <id>http://yoursite.com/2016/04/18/喜马拉雅黑科技——无卡顿网页播放器/</id>
     <published>2016-04-18T07:04:55.000Z</published>
-    <updated>2016-04-18T08:53:32.816Z</updated>
+    <updated>2016-04-21T03:00:17.268Z</updated>
     
-    <content type="html">&lt;p&gt;　　某天上班，偶然打开网页版的喜马拉雅，随手点了首推荐音频。。。于是伴随着动词大词，动词大词，继续逛着它的首页。&lt;br&gt;　　一个不小心，又点进了老郭的相声，哎，还是木有更新，不过老段子也可以再听听，正当老夫要点播的时候，突然！哎呀！卧槽！卧槽！牛逼啊！我都逛了这么多页面了，耳机里的”动词大词”竟然连顿都没打，当时还打开了一下本地播放器，以为是它播放的音乐。&lt;br&gt;　　详细情形是这样的：我在喜马拉雅的&lt;strong&gt;a页面&lt;/strong&gt;播放了音乐，然后又去&lt;strong&gt;b页面&lt;/strong&gt;，&lt;strong&gt;c页面&lt;/strong&gt;，音乐却并没有卡顿现象，稳如死狗！注意，这里说的是连卡顿都没有，不是说跳到别的页面会继续播放。&lt;br&gt;　　国内的在线音乐平台有很多，实现喜马拉雅的这种哥还是头一回见啊。大部分都是采取的本地缓存音乐进度，跳到别的页面再读取进度，继续播放，但切页面的时候肯定是会有卡顿的。所以这里给喜马拉雅的用户体验32个赞！&lt;br&gt;　　那么问题来了，这种网页播放器是如何实现的？&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;　　简单点说，其实就是使用了html5的api:&lt;a href=&quot;http://www.cnblogs.com/flash3d/archive/2013/10/23/3384823.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;histoyr.pushstate&lt;/a&gt;。&lt;/p&gt;
+    <content type="html">&lt;p&gt;　　某天上班，偶然打开网页版的喜马拉雅，随手点了首推荐音频。。。于是伴随着动词大词，动词大词，继续逛着它的首页。&lt;br&gt;　　一个不小心，又点进了老郭的相声，哎，还是木有更新，不过老段子也可以再听听，正当老夫要点播的时候，突然！哎呀！卧槽！卧槽！牛逼啊！我都逛了这么多页面了，耳机里的”动词大词”竟然连顿都没打，当时还打开了一下本地播放器，以为是它播放的音乐。&lt;br&gt;　　详细情形是这样的：我在喜马拉雅的&lt;strong&gt;a页面&lt;/strong&gt;播放了音乐，然后又去&lt;strong&gt;b页面&lt;/strong&gt;，&lt;strong&gt;c页面&lt;/strong&gt;，音乐却并没有卡顿现象，稳如死狗！注意，这里说的是连卡顿都没有，不是说跳到别的页面会继续播放。&lt;br&gt;　　国内的在线音乐平台有很多，实现喜马拉雅的这种哥还是头一回见啊。大部分都是采取的本地缓存音乐进度，跳到别的页面再读取进度，继续播放，但切页面的时候肯定是会有卡顿的。所以这里给喜马拉雅的用户体验32个赞！&lt;br&gt;　　那么问题来了，这种网页播放器是如何实现的？&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;　　简单点说，其实就是使用了html5的api:&lt;a href=&quot;http://www.cnblogs.com/flash3d/archive/2013/10/23/3384823.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;history.pushstate&lt;/a&gt;。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;页面中，所有的a标签，js对其做了点击事件的拦截，如果是支持该API的浏览器不会发生跳转，而是通过ajax请求该链接，返回结果是一串类似于如下的json:&lt;/li&gt;
 &lt;/ol&gt;
