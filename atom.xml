@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-26T07:25:53.016Z</updated>
+  <updated>2016-04-26T07:41:53.265Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/04/26/IE8%E5%85%BC%E5%AE%B9%E8%AE%B0%E2%80%94%E5%AE%8C%E7%BE%8E%E6%A8%A1%E6%8B%9Foninput/"/>
     <id>http://yoursite.com/2016/04/26/IE8兼容记—完美模拟oninput/</id>
     <published>2016-04-26T07:07:38.000Z</published>
-    <updated>2016-04-26T07:25:53.016Z</updated>
+    <updated>2016-04-26T07:41:53.265Z</updated>
     
     <content type="html">&lt;p&gt;　　哈喽，前端的小伙伴们！在聊今天的IE兼容之前，还是先跟我一起问候下(日了)ie的所有版本吧！&lt;br&gt;　　在现代浏览器中，对表单元素的输入监听一般是通过监听”input”事件来实现，但坑爹的是ie8及之前的版本是不支持这个事件的,基本会使用它的替代品——“propertychange”来模拟这个事件，但模拟总归是模拟，如下是我总结的它们之间的最大区别&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;propertychange和input的区别&quot;&gt;&lt;a href=&quot;#propertychange和input的区别&quot; class=&quot;headerlink&quot; title=&quot;propertychange和input的区别&quot;&gt;&lt;/a&gt;propertychange和input的区别&lt;/h1&gt;&lt;ol&gt;
@@ -56,7 +56,7 @@
 &lt;p&gt;　　为什么又是基本正确呢？因为以上的例子基本全是事件的单一绑定，多绑定的坑还有很多。&lt;br&gt;这里提一点最容易被坑的吧,就是这段代码:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;if(setValByJs)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    setValByJs=false;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;else&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //这里写事件处理即可&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;　　如果该表单元素的propertychange事件绑定了多个监听方法，只有第一个方法里会获取到setValByJs的正确值，后面的获取到的永远都是false.大家好好看下代码便知原因。这种情况也是得用点歪门斜道解决:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;if(setValByJs)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    setTimeout(function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        setValByJs=false;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;,0)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;else&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //这里写事件处理即可&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;　　而且以上代码没有覆盖到所有表单元素，比如上文中提到的下拉选择框，它一般不直接监听”value”，不过核心思路都在这了，希望对你有用！希望世上再没有IE！阿门&lt;/p&gt;
-&lt;div class=&quot;tip&quot;&gt;　&lt;br&gt;    其实之前有写过IE8兼容插件&lt;a href=&quot;https://github.com/awei-yu/JsLibs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;fixJSForIE8&lt;/a&gt;通过它可以让ie8兼容各种js的新特性并无须更改现有代码。只是目前该插件正在重构中，老的版本还并不能完美模拟”oninput”以及写得很烂。。着急的话可以先凑合用。主要目前缺少IE8的测试机器(不想装虚拟机)一旦更新，我会推送的。那就关注我的git吧~&lt;br&gt;&lt;/div&gt;</content>
+&lt;div class=&quot;tip&quot;&gt;　&lt;br&gt;    其实之前有写过IE8兼容插件&lt;a href=&quot;https://github.com/aweiu/JsLibs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;fixJSForIE8&lt;/a&gt;通过它可以让ie8兼容各种js的新特性并无须更改现有代码。只是目前该插件正在重构中，老的版本还并不能完美模拟”oninput”以及写得很烂。。着急的话可以先凑合用。主要目前缺少IE8的测试机器(不想装虚拟机)一旦更新，我会推送的。那就关注我的git吧~&lt;br&gt;&lt;/div&gt;</content>
     
     <summary type="html">
     
