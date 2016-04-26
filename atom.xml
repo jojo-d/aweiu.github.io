@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://aweiu.com/"/>
   <updated>2016-04-26T07:41:53.265Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://aweiu.com/</id>
   
   <author>
     <name>余阿伟</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>IE8兼容记—完美模拟oninput</title>
-    <link href="http://yoursite.com/2016/04/26/IE8%E5%85%BC%E5%AE%B9%E8%AE%B0%E2%80%94%E5%AE%8C%E7%BE%8E%E6%A8%A1%E6%8B%9Foninput/"/>
-    <id>http://yoursite.com/2016/04/26/IE8兼容记—完美模拟oninput/</id>
+    <link href="http://aweiu.com/2016/04/26/IE8%E5%85%BC%E5%AE%B9%E8%AE%B0%E2%80%94%E5%AE%8C%E7%BE%8E%E6%A8%A1%E6%8B%9Foninput/"/>
+    <id>http://aweiu.com/2016/04/26/IE8兼容记—完美模拟oninput/</id>
     <published>2016-04-26T07:07:38.000Z</published>
     <updated>2016-04-26T07:41:53.265Z</updated>
     
@@ -65,18 +65,18 @@
     </summary>
     
     
-      <category term="IE8兼容" scheme="http://yoursite.com/tags/IE8%E5%85%BC%E5%AE%B9/"/>
+      <category term="IE8兼容" scheme="http://aweiu.com/tags/IE8%E5%85%BC%E5%AE%B9/"/>
     
-      <category term="IE8监听oninput" scheme="http://yoursite.com/tags/IE8%E7%9B%91%E5%90%AConinput/"/>
+      <category term="IE8监听oninput" scheme="http://aweiu.com/tags/IE8%E7%9B%91%E5%90%AConinput/"/>
     
-      <category term="propertychange忽略js" scheme="http://yoursite.com/tags/propertychange%E5%BF%BD%E7%95%A5js/"/>
+      <category term="propertychange忽略js" scheme="http://aweiu.com/tags/propertychange%E5%BF%BD%E7%95%A5js/"/>
     
   </entry>
   
   <entry>
     <title>喜马拉雅黑科技——无卡顿网页播放器</title>
-    <link href="http://yoursite.com/2016/04/18/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E9%BB%91%E7%A7%91%E6%8A%80%E2%80%94%E2%80%94%E6%97%A0%E5%8D%A1%E9%A1%BF%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE%E5%99%A8/"/>
-    <id>http://yoursite.com/2016/04/18/喜马拉雅黑科技——无卡顿网页播放器/</id>
+    <link href="http://aweiu.com/2016/04/18/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E9%BB%91%E7%A7%91%E6%8A%80%E2%80%94%E2%80%94%E6%97%A0%E5%8D%A1%E9%A1%BF%E7%BD%91%E9%A1%B5%E6%92%AD%E6%94%BE%E5%99%A8/"/>
+    <id>http://aweiu.com/2016/04/18/喜马拉雅黑科技——无卡顿网页播放器/</id>
     <published>2016-04-18T07:04:55.000Z</published>
     <updated>2016-04-21T03:00:17.268Z</updated>
     
@@ -115,11 +115,11 @@
     </summary>
     
     
-      <category term="喜马拉雅播放器" scheme="http://yoursite.com/tags/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E6%92%AD%E6%94%BE%E5%99%A8/"/>
+      <category term="喜马拉雅播放器" scheme="http://aweiu.com/tags/%E5%96%9C%E9%A9%AC%E6%8B%89%E9%9B%85%E6%92%AD%E6%94%BE%E5%99%A8/"/>
     
-      <category term="单页应用" scheme="http://yoursite.com/tags/%E5%8D%95%E9%A1%B5%E5%BA%94%E7%94%A8/"/>
+      <category term="单页应用" scheme="http://aweiu.com/tags/%E5%8D%95%E9%A1%B5%E5%BA%94%E7%94%A8/"/>
     
-      <category term="singlePage" scheme="http://yoursite.com/tags/singlePage/"/>
+      <category term="singlePage" scheme="http://aweiu.com/tags/singlePage/"/>
     
   </entry>
   
