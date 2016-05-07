@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aweiu.com/"/>
-  <updated>2016-05-06T02:48:35.177Z</updated>
+  <updated>2016-05-07T11:11:35.222Z</updated>
   <id>http://aweiu.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>短小精悍的js银行卡校验(luhn算法)</title>
+    <link href="http://aweiu.com/2016/05/07/%E7%9F%AD%E5%B0%8F%E7%B2%BE%E6%82%8D%E7%9A%84js%E9%93%B6%E8%A1%8C%E5%8D%A1%E6%A0%A1%E9%AA%8C-luhn%E7%AE%97%E6%B3%95/"/>
+    <id>http://aweiu.com/2016/05/07/短小精悍的js银行卡校验-luhn算法/</id>
+    <published>2016-05-07T11:07:12.000Z</published>
+    <updated>2016-05-07T11:11:35.222Z</updated>
+    
+    <content type="html">&lt;p&gt;网上搜索的看着都蛋疼。实现的太复杂，故精简如下:&lt;br&gt;请自测。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function checkBankCard(cardNo)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       var tmp=true,total=0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       for(var i=cardNo.length;i&amp;gt;0;i--)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           var num=cardNo.substring(i,i-1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           if(tmp=!tmp,tmp)num=num*2;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           var gw=num%10;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           total+=(gw+(num-gw)/10);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       return total%10==0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;网上搜索的看着都蛋疼。实现的太复杂，故精简如下:&lt;br&gt;请自测。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="luhn算法" scheme="http://aweiu.com/tags/luhn%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="js银行卡校验" scheme="http://aweiu.com/tags/js%E9%93%B6%E8%A1%8C%E5%8D%A1%E6%A0%A1%E9%AA%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>seajs进阶小记</title>
